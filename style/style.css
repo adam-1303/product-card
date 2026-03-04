@@ -92,3 +92,11 @@ h1 {
   line-height: 24px;
   font-size: 20px;
 }
+
+#change-color-button {
+  background-color: blue;
+}
+
+#change-color-button.active {
+  background-color: red;
+}
