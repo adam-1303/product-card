@@ -1,0 +1,94 @@
+* {
+  font-family: Montserrat, sans-serif;
+  color: #515076;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.flower {
+  width: 790px;
+  height: 697px;
+  position: absolute;
+  top: -0px;
+  left: 85px;
+}
+
+h1 {
+  position: absolute;
+  width: 846;
+  height: 78;
+  top: 220px;
+  left: 217px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
+}
+
+.product-card-wraper {
+  width: 1110px;
+  height: 1191px;
+  top: 408px;
+  left: 85px;
+  border-width: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  width: 340px;
+  height: 573px;
+  background: #F7F7FA;
+  padding: 25px 25px;
+}
+
+.product-card__img {
+  display: block;
+  width: 290px;
+  height: 245px;
+}
+
+.product-card__for-skin {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #A5A3B9;
+  text-transform: uppercase;
+}
+
+.product-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.product-card__descr {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.product-card__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.product-card__composition {
+  line-height: 18px;
+  font-size: 13px;
+  padding: 0px 15px;
+}
+
+
+.product-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.product-card__price-text {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+}
