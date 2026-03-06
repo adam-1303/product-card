@@ -29,7 +29,7 @@ googleOpenButton.addEventListener('click', openGoogle);
 function openGoogle() {
   const answer = confirm('Вы действительно хотите перейти на сайт Google?');
   
-  if(answer === true) {
+  if (answer === true) {
     window.open('https://google.com');
   } else {
     console.log('Пользователь отменил переход на сайт Google');
@@ -40,7 +40,7 @@ function openGoogle() {
 
 const title = document.querySelector('h1');
 title.addEventListener('mouseover', () => {
-  console.log('Заголовок страницы');
+  console.log('title.textContent');
 });
 
 // Цветная кнопка
