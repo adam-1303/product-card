@@ -40,7 +40,7 @@ function openGoogle() {
 
 const title = document.querySelector('h1');
 title.addEventListener('mouseover', () => {
-  console.log('title.textContent');
+  console.log(title.textContent);
 });
 
 // Цветная кнопка
