@@ -27,12 +27,12 @@ console.log(299792458);
 /* Задание №3: Создал переменную №1 котороя содержит продукт 
 и переменную №2 которая содержит его цену */
 
-const product = 'milk';
+const buyProduct = 'milk';
 const price = 100;
 
 const calculateValue = (budget) => {
   if (budget >= price) {
-    console.log(`${product} приобретен. Спасибо за покупку!`);
+    console.log(`${buyProduct} приобретен. Спасибо за покупку!`);
   } else {
     console.log(`Вам не хватает ${price - budget}$, пополните баланс`);
   }
@@ -56,4 +56,3 @@ const age = 20;
 const country = 'Россия';
 
 console.log(`Меня зовут ${name}, мне ${age} лет и я из ${country}`);
-
