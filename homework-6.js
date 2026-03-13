@@ -44,7 +44,7 @@ getObjectProperty(user, 'city');
 
 // Задание №5: Создал массив.
 
-const products = ['bread', 'milk', 'egg', 'meat', 'cheese']
+const products = ['bread', 'milk', 'egg', 'meat', 'cheese'];
 
 
 // Задание №6: Создал массив из объектов.
@@ -123,3 +123,19 @@ const myBooks = [
 ];
 
 const library = [...books, ...myBooks];
+
+
+/*Задание №8: Написать функцию, которая принимает массив сущностей с задания №9. 
+Добавляем новое свойство для объекта "isRare (это редкий)" 
+и в зависимости от года выпуска книги (или какой-то логики, 
+связанной с вашей сущностью), устанавливаем true или false. 
+Что я хочу этим сказать: если книга выпущена позже 2000 года,
+устанавливаем true (да, это редкий), нет - false (значит это не редкий). */
+
+const getBooks = (books) => {
+  return books.map(book => ({
+    ...book,
+    isRare: book.year > 1900
+  }));
+};
+const rareBooks = getBooks(library);
