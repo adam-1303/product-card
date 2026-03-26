@@ -9,7 +9,7 @@ const numbersFromFive = numbers.slice(4);
 // 3. Создать массив строк, относящихся к любой сущности (название фильмов/книг, кухонные приборы, мебель и т.д.), проверить, есть ли в массиве какая-то определенная сущность.
 
 const car = ['BMW', 'Lada', 'Mercedes', 'Volvo', 'Ferrari'];
-const hasCar = car.includes('Lada');
+const hasLada = car.includes('Lada');
 
 
 // 4. Написать функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный ("переворачивать") . Два вышеуказанных массива с помощью этой функции перевернуть.
@@ -24,12 +24,12 @@ const newArrayNumbers = reverseArray(numbers);
 
 // 7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-const hasEmails = commentsMedia.filter(comment => comment.email.includes('.com'));
+const comEmailComments = commentsMedia.filter(comment => comment.email.includes('.com'));
 
 
 // 8. Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
-const usersWithPostId = commentsMedia.map(user => ({
+const updatedComments = commentsMedia.map(user => ({
   ...user,
   postId: user.id <= 5 ? 2 : 1
 }));
