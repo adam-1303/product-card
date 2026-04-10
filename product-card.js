@@ -1,4 +1,4 @@
-export const productCard = [
+export const productCards = [
   {
     img: 'moisturizing_mousse',
     subtitle: 'Для нормальной кожи',

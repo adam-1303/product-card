@@ -1,7 +1,7 @@
-import { productCard } from "./product-card.js";
+import { productCards } from "./product-card.js";
 
 // (Задание №4): Метод reduce.
-const productDescriptionMap = productCard.reduce((acc, product) => {
+const productDescriptionMap = productCards.reduce((acc, product) => {
   acc[product.title] = product.description;
   return acc;
 }, {});
@@ -45,13 +45,13 @@ function getAmount() {
     return value;
   }
 
-  return 0;
+  return getAmount();
+};
+
+
+if (amount) {
+  renderCards(productCards, amount);
 };
 
 const amount = getAmount();
-
-if (amount) {
-  renderCards(productCard, amount);
-};
-
 
