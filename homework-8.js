@@ -48,10 +48,11 @@ function getAmount() {
   return getAmount();
 };
 
+const amount = getAmount();
 
 if (amount) {
   renderCards(productCards, amount);
 };
 
-const amount = getAmount();
+
 
