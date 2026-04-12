@@ -18,13 +18,13 @@ const reverseArray = (arr) => {
   return arr.reverse();
 };
 
-const newArrayCar = reverseArray(car);
-const newArrayNumbers = reverseArray(numbers);
+const reversedCars = reverseArray(car);
+const reversedNumbers = reverseArray(numbers);
 
 
 // 7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-const comEmailComments = commentsMedia.filter(comment => comment.email.includes('.com'));
+const commentComEmails = commentsMedia.filter(comment => comment.email.includes('.com'));
 
 
 // 8. Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
