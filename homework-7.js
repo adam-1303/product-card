@@ -19,7 +19,7 @@ const reverseArray = (arr) => {
 };
 
 const reversedCars = reverseArray(car);
-const newArrayNumbers = reverseArray(numbers);
+const reversedNumbers = reverseArray(numbers);
 
 
 // 7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
