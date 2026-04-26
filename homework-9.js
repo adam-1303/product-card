@@ -1,5 +1,6 @@
 const buttonRegister = document.querySelector(".footer__register-btn");
 const openWindow = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 const closeWindow = document.querySelector(".modal__close-btn");
 const btnForRegister = document.querySelector("#registrationForm");
 const passs1 = document.querySelector("#user-password");
@@ -10,7 +11,7 @@ const userSurname = document.querySelector("#user-surname");
 const userOfBirth = document.querySelector("#user-birth");
 const userLogin = document.querySelector("#user-login");
 const subscribeForm = document.querySelector(".subscribe-form");
-const emailInput = document.querySelector(".footer__input");
+const emailInput = document.querySelector(".subscribe-input");
 let user = {}
 
 subscribeForm.addEventListener("submit", (event) => {
@@ -28,10 +29,12 @@ subscribeForm.addEventListener("submit", (event) => {
 
 buttonRegister.addEventListener("click", () => {
   openWindow.classList.add("modal-showed");
+  overlay.classList.add("modal-showed");
 });
 
 closeWindow.addEventListener("click", () => {
   openWindow.classList.remove("modal-showed");
+  overlay.classList.remove("modal-showed");
 });
 
 btnForRegister.addEventListener("submit", (event) => {
@@ -52,6 +55,7 @@ btnForRegister.addEventListener("submit", (event) => {
     else {
       errorMessage.style.display = "none";
       openWindow.classList.remove("modal-showed");
+      overlay.classList.remove("modal-showed");
 
       user = {
         name: userName.value,
