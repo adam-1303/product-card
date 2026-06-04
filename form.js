@@ -23,7 +23,7 @@ export class Form {
   validateForm() {
     const data = this.getValuesForm();
     const isNativeValid = this.form.checkValidity();
-    const passwordsMatch = data.password === data.passwordConfirm;
+    const passwordsMatch = data.password === data.confirmPassword;
 
     if (!passwordsMatch) {
       alert('Пароли не совпадают!');

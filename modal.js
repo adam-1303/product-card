@@ -13,15 +13,48 @@
 // управлять через айди модалки ее закрытием, открытием.
 
 
+// export class Modal {
+//   constructor(modalId) {
+//     this.modal = document.getElementById(modalId);
+//     this.showClass = 'modal-showed';
+//   }
+//   open() {
+//     this.modal.classList.add(this.showClass);
+//   }
+//   close() {
+//     this.modal.classList.remove(this.showClass);
+//   }
+// }
+
+
 export class Modal {
   constructor(modalId) {
     this.modal = document.getElementById(modalId);
-    this.showClass = 'show';
+    this.showClass = "modal-showed";
+
+    this.listenCloseButton();
   }
+
   open() {
     this.modal.classList.add(this.showClass);
   }
+
   close() {
     this.modal.classList.remove(this.showClass);
+  }
+
+  isOpen() {
+    return this.modal.classList.contains(this.showClass);
+  }
+
+  listenCloseButton() {
+    const closeBtn =
+      this.modal.querySelector(".modal__close-btn");
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        this.close();
+      });
+    }
   }
 }

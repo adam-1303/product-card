@@ -27,15 +27,6 @@ subscribeForm.addEventListener("submit", (event) => {
   }
 });
 
-buttonRegister.addEventListener("click", () => {
-  openWindow.classList.add("modal-showed");
-  overlay.classList.add("modal-showed");
-});
-
-closeWindow.addEventListener("click", () => {
-  openWindow.classList.remove("modal-showed");
-  overlay.classList.remove("modal-showed");
-});
 
 btnForRegister.addEventListener("submit", (event) => {
   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;

@@ -1,4 +1,4 @@
-import "./script.js";
+// import "./script.js";
 import "./homework-10.js"
 import "./homework-9.js";
 import "./homework-8.js";
@@ -10,17 +10,12 @@ import "./comments.js";
 import { Modal } from "./modal.js";
 import { Form } from "./form.js";
 
-const registrationForm = new Form('form-registration');
+const registrationForm = new Form('registrationForm');
 const modal = new Modal('modal');
 
-const openBtn = document.getElementById('button-registration');
+const openBtn = document.querySelector('.footer__register-btn');
 openBtn.addEventListener('click', () => {
   modal.open();
-});
-
-const closeBtn = document.getElementById('close-modal');
-closeBtn.addEventListener('click', () => {
-  modal.close();
 });
 
 registrationForm.form.addEventListener('submit', (event) => {
