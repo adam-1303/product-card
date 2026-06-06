@@ -26,37 +26,3 @@ subscribeForm.addEventListener("submit", (event) => {
     emailInput.value = "";
   }
 });
-
-
-btnForRegister.addEventListener("submit", (event) => {
-  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
-  event.preventDefault();
-  if (!btnForRegister.checkValidity()) {
-    console.log("Форма пустая");
-    return;
-  } else {
-    if (passs1.value !== passs2.value) {
-      errorMessage.textContent = "Пароли не совпадают";
-      errorMessage.style.display = "block";
-      return;
-    } else if (!passwordRegex.test(passs1.value)) {
-      errorMessage.textContent = "Пароль слишком простой (нужно 8 симв., буквы и цифры)";
-      errorMessage.style.display = "block";
-    }
-    else {
-      errorMessage.style.display = "none";
-      openWindow.classList.remove("modal-showed");
-      overlay.classList.remove("modal-showed");
-
-      user = {
-        name: userName.value,
-        surname: userSurname.value,
-        birthday: userOfBirth.value,
-        login: userLogin.value,
-        password: passs1.value,
-        createdOn: new Date()
-      }
-      console.log(user);
-    };
-  };
-});
