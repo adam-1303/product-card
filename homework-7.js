@@ -63,5 +63,14 @@ const emailsByMap = commentsMedia.map(item => item.email);
 
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
+const emails = [
+  "test@gmail.com",
+  "admin@gmail.com",
+  "user@gmail.com"
+];
+
 const emailsByString = emails.toString();
-const emaisByJoin = emails.join();
+const emailsByJoin = emails.join();
+
+console.log(emailsByString);
+console.log(emailsByJoin);
