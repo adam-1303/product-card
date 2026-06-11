@@ -13,20 +13,6 @@
 // управлять через айди модалки ее закрытием, открытием.
 
 
-// export class Modal {
-//   constructor(modalId) {
-//     this.modal = document.getElementById(modalId);
-//     this.showClass = 'modal-showed';
-//   }
-//   open() {
-//     this.modal.classList.add(this.showClass);
-//   }
-//   close() {
-//     this.modal.classList.remove(this.showClass);
-//   }
-// }
-
-
 export class Modal {
   constructor(modalId) {
     this.modal = document.getElementById(modalId);

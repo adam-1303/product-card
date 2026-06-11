@@ -4,100 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <title>Product card</title>
+  <title>Registration</title>
 </head>
 
 <body>
-  
-<template id="product-card-template">
-  <div class="product-card">
-    <img class="product-card__img" />
-    <p class="product-card__for-skin"></p>
-    <h3 class="product-card__title"></h3>
-    <p class="product-card__descr"></p>
+  <button class="button" id="reg-button">Регистрация</button>
+  <button class="button" id="auth-button">Аутентификация</button>
 
-    <ul class="product-card__compound"></ul>
+  <div class="overlay" id="overlay"></div>
 
-    <span class="product-card__price"></span>
+  <div class="modal" id="reg-modal">
+    <button class="close-modal">Закрыть</button>
+    <h1>Регистрация</h1>
+    <span>Логин</span>
+    <span>Пароль</span>
+    <span>Повторите пароль</span>
+    <span>Регистрация</span>
   </div>
-</template>
 
-<div id="product-card-list"></div>
-
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="footer__info">
-          <h3 class="footer-title">Product Cards</h3>
-          <p class="footer-desc">У Нас Самые Лучшие Продукты Для Кожи!</p>
-        </div>
-        <div class="footer__icons">
-         <i class="fa-brands fa-telegram"></i>
-         <i class="fa-brands fa-vk"></i>
-        </div>
-      </div>
-      <div class="footer-center">
-        <label class="subscribe-label" for="email">Подпишись на наши акции:</label>
-        <form class="subscribe-form" id="email-form">
-          <input type="email" placeholder="Ваш Email..." name="email" class="subscribe-input" required>
-          <button type="submit" class="subscribe-button">Подписаться</button>
-        </form>
-      </div>
-
-      <nav class="footer-nav">
-        <h3 class="footer-title">Быстрые ссылки</h3>
-        <ul class="footer-menu">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <p class="line-decoretion"></p>
-
-    <div class="footer-bottom">
-      <a href="www.product-cards.com">www.product-cards.com</a>
-      <small>©all right reserve</small>
-    </div>
-  </footer>
-
-  <button class="footer__register-btn">
-    Регистрация
-  </button>
-
-  <div class="overlay"></div>
-
-   <div class="modal" id="modal">
-    <button class="modal__close-btn">&times;</button>
-    <div class="modal__content">
-      <h2 class="modal__title">Регистрация</h2>      
-      <form action="" class="modal__form" id="registrationForm">
-        <label class="modal__label" for="user-name">Имя</label>
-        <input class="modal__input" id="user-name" type="text" name="name" placeholder="Введите Имя" required>
-        <label class="modal__label" for="user-surname">Фамилия</label>
-        <input class="modal__input" id="user-surname" type="text" name="surname" placeholder="Введите Фамилию" required>
-        <label class="modal__label" for="user-birth">Дата рождения</label>
-        <input class="modal__input" id="user-birth"  type="date" name="birthday" placeholder="Введите дату рождения" required>
-        <label class="modal__label" for="user-login">Логин</label>
-        <input class="modal__input" id="user-login" type="text" name="login" placeholder="Введите Логин" required>
-        <label class="modal__label" for="user-password">Пароль</label>
-        <input class="modal__input" id="user-password" type="password" name="password" placeholder="Введите Пароль" required>
-        <label class="modal__label" for="user-password-confirm">Повтор пароля</label>
-        <input class="modal__input" id="user-password-confirm" type="password" name="confirmPassword" placeholder="Повторите пароль" required>
-        <p class="modal__error" id="error-message"></p>
-        <button class="modal__submit-btn" type="submit">Зарегистрироваться</button>
-      </form>    
-    </div>
+  <div class="modal" id="auth-modal">
+    <button class="close-modal">Закрыть</button>
+    <h1>Аутентификация</h1>
+    <span>Логин</span>
+    <span>Пароль</span>
+    <span>Аутентификация</span>
   </div>
-  
 
-  <script type="module" src="main.js"></script>
+  <script type="module" src="./homework-12.js"></script>
 
 </body>
