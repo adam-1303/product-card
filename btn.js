@@ -1,4 +1,4 @@
-import { Modal } from "./Modal1.js"
+import { Modal } from "./Modal.js"
 
 const button = document.querySelector('.button')
 const closeButton = document.querySelector('.close-modal')
