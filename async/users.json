@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Адам",
+      "surname": "Магомедов",
+      "age": 25,
+      "email": "adam@test.com",
+      "city": "Кизляр"
+    },
+
+    {
+      "id": 2,
+      "name": "Иван",
+      "surname": "Иванов",
+      "age": 20,
+      "email": "ivan@test.com",
+      "city": "Москва"
+    },
+
+    {
+      "id": 3,
+      "name": "Максим",
+      "surname": "Петров",
+      "age": 28,
+      "email": "maksim@test.com",
+      "city": "Санкт-Петербург"
+    }
+  ]
+}
+  
