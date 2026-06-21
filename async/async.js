@@ -97,7 +97,7 @@ const deleteCardButton = document.getElementById('deleteCard');
 
 deleteCardButton.addEventListener('click', () => {
   try {
-    const idToDelete = prompt('Введите ID клиента');
+    const idToDelete = Number(prompt('Введите ID клиента'));
     const usersFromLocalStorage = localStorage.getItem('users');
 
     if (!usersFromLocalStorage) {
