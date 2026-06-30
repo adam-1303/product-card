@@ -8,6 +8,7 @@ import "./homework-6.js";
 import "./homework-5.js";
 import "./product-card.js";
 import "./comments.js";
+import "./async/async.js"
 import { Modal } from "./modal.js";
 import { Form } from "./form.js";
 
